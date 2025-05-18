@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quiz Seru</title>
+    <link rel="stylesheet" href="style.css" />
+    <!-- Google font start -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Google font end -->
+
+    <!-- Google icon start -->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@24,400,0,0"
+    />
+    <!-- Google icon end -->
+  </head>
+  <body>
+    <!-- Quiz config container start-->
+    <div class="config-container">
+      <h2 class="config-title">Pengaturan Quiz</h2>
+
+      <div class="config-option">
+        <h4 class="option-title">Pilih Kategori</h4>
+        <div class="category-options">
+          <button class="category-option active">Matematika</button>
+          <button class="category-option">Pengetahuan Alam</button>
+          <button class="category-option">Sejarah</button>
+          <button class="category-option">Geografi</button>
+        </div>
+      </div>
+
+      <div class="config-option">
+        <h4 class="option-title">Jumlah Pertanyaan</h4>
+        <div class="question-options">
+          <button class="question-option">5</button>
+          <button class="question-option active">10</button>
+          <button class="question-option">15</button>
+          <button class="question-option">20</button>
+          <button class="question-option">25</button>
+        </div>
+      </div>
+      <button class="start-quiz-btn">Mulai Quiz</button>
+    </div>
+    <!-- Quiz config container end -->
+
+    <!-- Quiz container start -->
+    <div class="quiz-container">
+      <header class="quiz-header">
+        <h2 class="quiz-title">Aplikasi Quiz</h2>
+        <div class="quiz-timer">
+          <span class="material-symbols-rounded">timer</span>
+          <p class="time-duration">15s</p>
+        </div>
+      </header>
+
+      <div class="quiz-content">
+        <h1 class="question-text"></h1>
+        <ul class="answer-options"></ul>
+      </div>
+
+      <div class="quiz-footer">
+        <p class="question-status"></p>
+        <button class="next-question-btn">
+          Next <span class="material-symbols-rounded">arrow_right_alt</span>
+        </button>
+      </div>
+    </div>
+    <!-- Quiz container end -->
+
+    <!-- Result start -->
+    <div class="result-container">
+      <img src="result.png" alt="completed" , class="result-img" />
+      <h2 class="result-title">Quiz Selesai</h2>
+      <p class="result-message"></p>
+      <button class="try-again-btn">Coba Lagi</button>
+    </div>
+    <!-- Result end -->
+
+    <!-- JavaScript Start -->
+    <script src="javascript/questions.js"></script>
+    <script src="javascript/script.js"></script>
+    <!-- JacaSCript End -->
+  </body>
+</html>
